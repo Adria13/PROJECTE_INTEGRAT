@@ -20,7 +20,7 @@ session_start();
 			
 			<ul>
 				<li><a href="../views/PagHome">Home<span class="icon-book"></span></a></li>
-				<li><a href="../views/PagLibreria">Librería<span class="icon-books"></span></a></li>
+				<li><a href="../controller/remplazarLibreria.php">Librería<span class="icon-books"></span></a></li>
 				#session#
 				<li><a href="../views/PagContacto">Contacto</a></li>
 				<li><a href="#" class="busc">Buscar<span class="icon-search"></span></a></li>

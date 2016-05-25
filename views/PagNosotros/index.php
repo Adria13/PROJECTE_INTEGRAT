@@ -31,8 +31,8 @@ $option = '';
 			
 			<ul>
 				<li><a href="../PagHome">Home<span class="icon-book"></span></a></li>
-				<li><a href="../PagLibreria">Librería<span class="icon-books"></span></a></li>
-				<?php if(isset($_SESSION["username"])) {echo "<li><a href='../PerfilUser'>Perfil</a></li>";} else {echo "<li><a href='../../index.php'>Conectarse</a></li>";} ?>
+				<li><a href="../../controller/remplazarLibreria.php">Librería<span class="icon-books"></span></a></li>
+				<?php if(isset($_SESSION["username"])) {echo "<li><a href='../../controller/perfilusuario.php'>Perfil</a></li>";} else {echo "<li><a href='../../index.php'>Conectarse</a></li>";} ?>
 				<li><a href="../PagContacto">Contacto</a></li>
 				<li><a href="#" class="busc">Buscar<span class="icon-search"></span></a></li>
 				

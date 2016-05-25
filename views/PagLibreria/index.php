@@ -18,14 +18,14 @@
 </head>
 <body>
 	<header>
-		<a href="../../index.php"><div id="image"></div></a>
+		<a href="../index.php"><div id="image"></div></a>
 		<nav>
 			
 			<ul>
-				<li><a href="../PagHome">Home<span class="icon-book"></span></a></li>
-				<li><a href="../PagLibreria">Librería<span class="icon-books"></span></a></li>
+				<li><a href="../views/PagHome">Home<span class="icon-book"></span></a></li>
+				<li><a href="remplazarLibreria.php">Librería<span class="icon-books"></span></a></li>
 				#session#
-				<li><a href="../PagContacto">Contacto</a></li>
+				<li><a href="../views/PagContacto">Contacto</a></li>
 				<li><a href="#" class="busc">Buscar<span class="icon-search"></span></a></li>
 			</ul>
 		</nav>
@@ -36,7 +36,7 @@
 				<li class="openForm"><a href="#">Titulo<span class="icon-chevron-down"></span></a>
 				<ul>
 					<li class="formBuscar">
-						<form action="formBuscar.php">
+						<form action="../controller/buscarLibro.php" method="post">
 						<input type="text" name="titulo"/>
 						<input type="submit" value="Buscar"/>
 						</form>

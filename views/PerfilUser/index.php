@@ -24,7 +24,7 @@
 			
 			<ul>
 				<li><a href="../views/PagHome">Home<span class="icon-book"></span></a></li>
-				<li><a href="../views/PagLibreria">Librería<span class="icon-books"></span></a></li>
+				<li><a href="remplazarLibreria.php">Librería<span class="icon-books"></span></a></li>
 				#session#
 				<li><a href="../views/PagContacto">Contacto</a></li>
 				<li><a href="#" class="busc">Buscar<span class="icon-search"></span></a></li>
@@ -37,7 +37,7 @@
 				<li class="openForm"><a href="#">Titulo<span class="icon-chevron-down"></span></a>
 				<ul>
 					<li class="formBuscar">
-						<form action="formBuscar.php">
+						<form action="../controller/buscarLibro.php" method="post">
 						<input type="text" name="titulo"/>
 						<input type="submit" value="Buscar"/>
 						</form>

@@ -34,8 +34,8 @@ $option = '';
 		<nav>
 			
 			<ul>
-				<li><a href="#">Home<span class="icon-book"></span></a></li>
-				<li><a href="../PagLibreria">Librería<span class="icon-books"></span></a></li>
+				<li><a href="../PagHome">Home<span class="icon-book"></span></a></li>
+				<li><a href="../../controller/remplazarLibreria.php">Librería<span class="icon-books"></span></a></li>
 				<?php if(isset($_SESSION["username"])) {echo "<li><a href='../../controller/perfilusuario.php'>Perfil</a></li>";} else {echo "<li><a href='../../index.php'>Conectarse</a></li>";} ?>
 				<li><a href="../PagContacto">Contacto</a></li>
 				<li><a href="#" class="busc">Buscar<span class="icon-search"></span></a></li>
@@ -48,7 +48,7 @@ $option = '';
 				<li class="openForm"><a href="#">Titulo<span class="icon-chevron-down"></span></a>
 				<ul>
 					<li class="formBuscar">
-						<form action="formBuscar.php">
+						<form action="../../controller/buscarLibro.php" method="post">
 						<input type="text" name="titulo"/>
 						<input type="submit" value="Buscar"/>
 						</form>
@@ -82,9 +82,9 @@ $option = '';
 		<div id="barlarge">
         	<div class="contenido">
 				<div class="backgroundSlider">
-    				<img src="images/foto.jpg">
-    				<img src="images/transformation.jpg">
-    				<img src="images/libros.jpg">
+    				<img src="../images/foto1.jpg">
+    				<img src="../images/libros.jpg">
+    				<img src="../images/redes.jpg">
 				</div>
 			</div>
 			<h1>Top 10 libros</h1>
@@ -99,7 +99,7 @@ $option = '';
 				<img src="../images/portada/MOBYDICK.jpg">
 			</div>
 			<div class="bookItem">
-				<img src="../images/portada/DONQUIJOTEDELAMANCHA.jpeg">
+				<img src="../images/portada/DONQUIJOTEDELAMANCHA.jpg">
 			</div>
 			<div class="bookItem">
 				<img src="../images/portada/ELRUIDOYLAFURIA.jpg">
@@ -132,7 +132,7 @@ $option = '';
 				<img src="../images/portada/MOBYDICK.jpg">
 			</div>
 			<div class="bookItem">
-				<img src="../images/portada/DONQUIJOTEDELAMANCHA.jpeg">
+				<img src="../images/portada/DONQUIJOTEDELAMANCHA.jpg">
 			</div>
 			<div class="bookItem">
 				<img src="../images/portada/ELRUIDOYLAFURIA.jpg">
@@ -165,7 +165,7 @@ $option = '';
 				<img src="../images/portada/MOBYDICK.jpg">
 			</div>
 			<div class="bookItem">
-				<img src="../images/portada/DONQUIJOTEDELAMANCHA.jpeg">
+				<img src="../images/portada/DONQUIJOTEDELAMANCHA.jpg">
 			</div>
 			<div class="bookItem">
 				<img src="../images/portada/ELRUIDOYLAFURIA.jpg">
