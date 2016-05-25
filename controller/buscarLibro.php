@@ -32,7 +32,7 @@ require_once '../model/generador.php';
   $pagina=cambiar('/\#Ruta\#/ms',$img,$pagina);
 
   if(isset($_SESSION["username"])){
-  	$pagina=cambiar('/\#session\#/ms',"<li><a href='../views/PerfilUser'>Perfil</a></li>",$pagina);
+  	$pagina=cambiar('/\#session\#/ms',"<li><a href='../controller/perfilusuario.php'>Perfil</a></li>",$pagina);
   }else {
   	$pagina=cambiar('/\#session\#/ms',"<li><a href='../index.php'>Conectarse</a></li>",$pagina);
   

@@ -24,7 +24,7 @@ require_once '../model/generador.php';
   $pagina=cambiar('/\#nickname\#/ms',$usuar,$pagina);
   $pagina=cambiar('/\#Email\#/ms',$email,$pagina);
   if ($valor[0]["Fotoperfil"] == NULL) {
-    $pagina=cambiar('/\#Ruta\#/ms',"../views/images/fotoperfil.jpg",$pagina);
+    $pagina=cambiar('/\#Ruta\#/ms',"../controller/perfilusuario.php.jpg",$pagina);
   }else{
     $pagina=cambiar('/\#Ruta\#/ms',$img,$pagina);
   }

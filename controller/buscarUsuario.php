@@ -19,7 +19,7 @@ require_once '../model/generador.php';
   $usuar=$valor[0]["Usuario"];
   $email=$valor[0]["Email"];
   $img=$valor[0]["Fotoperfil"];
-  $pagina=cargarPlantillaPerfil("../views/PerfilUser/index.php");
+  $pagina=cargarPlantillaPerfil("../controller/perfilusuario.php");
   $pagina=cambiar('/\#Nombre\#/ms',$titulo,$pagina);
   $pagina=cambiar('/\#Apellido\#/ms',$autor,$pagina);
   $pagina=cambiar('/\#Fecha\#/ms',$fecha,$pagina);
@@ -27,7 +27,7 @@ require_once '../model/generador.php';
   $pagina=cambiar('/\#Ruta\#/ms',$img,$pagina);
 
 
-  	$pagina=cambiar('/\#session\#/ms',"<li><a href='../views/PerfilUser'>Perfil</a></li>",$pagina);
+  	$pagina=cambiar('/\#session\#/ms',"<li><a href='../controller/perfilusuario.php'>Perfil</a></li>",$pagina);
   
   
 
